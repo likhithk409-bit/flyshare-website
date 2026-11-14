@@ -803,3 +803,21 @@ a:focus-visible {
     outline-offset: 4px;
     border-radius: 6px;
 }
+/* Remove blue tap highlight on mobile */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove mouse/touch focus outline */
+button:focus,
+a:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+/* Keep a gold focus indicator for keyboard navigation */
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #d4af37 !important;
+    outline-offset: 4px;
+}
