@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyShare | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="brand-logo">
+         <img src="flyshare-logo.png" alt="FlyShare Logo">
+    </a>
+    <span>ADMIN PANEL</span>
+</header>
+
+<main class="admin-container">
+
+    <section class="admin-heading">
+        <p class="eyebrow">FLYSHARE MANAGEMENT</p>
+        <h1>Admin Dashboard</h1>
+        <p>Manage passenger registrations and travel interest.</p>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat-card">
+            <p>Total Registrations</p>
+            <h2 id="totalRegistrations">—</h2>
+        </div>
+
+        <div class="stat-card">
+            <p>Total Passengers</p>
+            <h2 id="totalPassengers">—</h2>
+        </div>
+
+        <div class="stat-card">
+            <p>Destinations</p>
+            <h2 id="totalDestinations">—</h2>
+        </div>
+    </section>
+
+    <section class="admin-panel">
+        <h2>Passenger Registrations</h2>
+
+        <input
+            type="search"
+            id="searchPassenger"
+            placeholder="Search by name, email or destination..."
+        >
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Airport</th>
+                        <th>Destination</th>
+                        <th>Travel Date</th>
+                        <th>Passengers</th>
+                    </tr>
+                </thead>
+                <tbody id="passengerTable">
+                    <tr>
+                        <td colspan="6">Dashboard data will appear here.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p id="adminMessage"></p>
+    </section>
+
+</main>
+
+</body>
+</html>

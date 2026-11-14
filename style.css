@@ -96,8 +96,13 @@ a {
     align-items: center;
     gap: 60px;
     background:
-        radial-gradient(ellipse at 80% 40%, #193451 0%, transparent 45%),
-        var(--navy);
+    linear-gradient(
+        90deg,
+        rgba(5, 17, 35, 0.96) 0%,
+        rgba(5, 17, 35, 0.78) 48%,
+        rgba(5, 17, 35, 0.35) 100%
+    ),
+    url("airport-bg.jpg") center / cover no-repeat;
 }
 
 .eyebrow {
@@ -680,4 +685,108 @@ footer p {
     width: 180px;
     height: 65px;
     object-fit: contain;
+}
+/* FLYSHARE WEBSITE ANIMATIONS */
+
+/* Smooth page entrance */
+body {
+    animation: pageFade 0.8s ease both;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Headings entrance */
+h1, h2, h3 {
+    animation: textReveal 0.9s ease both;
+}
+
+@keyframes textReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Paragraph entrance */
+p {
+    animation: paragraphReveal 1.1s ease both;
+}
+
+@keyframes paragraphReveal {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button hover and click */
+button, .main-button, a.button {
+    transition: all 0.25s ease;
+}
+
+button:hover, .main-button:hover, a.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(224, 183, 99, 0.25);
+}
+
+button:active, .main-button:active, a.button:active {
+    transform: scale(0.96);
+}
+
+/* Navigation hover */
+nav a {
+    transition: color 0.25s ease;
+}
+
+nav a:hover {
+    color: #e0b763;
+}
+
+/* Cards hover */
+.card, .feature-card, .stat-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .feature-card:hover, .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Respect reduced-motion settings */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+/* Professional FlyShare ride mark */
+.ride-mark {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(224, 183, 99, 0.6);
+    border-radius: 16px;
+    background: linear-gradient(145deg, #e0b763, #a87924);
+    color: #07172b;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
