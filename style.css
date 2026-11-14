@@ -565,3 +565,119 @@ footer p {
         font-size: 37px;
     }
 }
+
+/* FLYSHARE ADMIN DASHBOARD */
+
+.admin-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 30px;
+}
+
+.admin-heading {
+    margin-bottom: 35px;
+}
+
+.admin-heading h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.admin-heading p {
+    color: #b9c5d8;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 35px 0;
+}
+
+.stat-card,
+.admin-panel {
+    background: #12243d;
+    border: 1px solid rgba(225, 183, 96, 0.25);
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.stat-card p {
+    color: #b9c5d8;
+}
+
+.stat-card h2 {
+    color: #e4bd70;
+    font-size: 34px;
+}
+
+.admin-panel h2 {
+    margin-bottom: 25px;
+}
+
+#searchPassenger {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    background: #081629;
+    color: white;
+    border: 1px solid #52647c;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.admin-panel table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.admin-panel th,
+.admin-panel td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #30435c;
+}
+
+.admin-panel th {
+    color: #e4bd70;
+}
+
+.admin-panel td {
+    color: #e4eaf3;
+}
+
+#adminMessage {
+    color: #e4bd70;
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-container {
+        padding: 18px;
+    }
+
+    .admin-heading h1 {
+        font-size: 32px;
+    }
+}
+.brand-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand-logo img {
+    width: 180px;
+    height: 65px;
+    object-fit: contain;
+}
