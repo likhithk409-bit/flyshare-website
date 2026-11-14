@@ -430,3 +430,138 @@ footer p {
         text-align: center;
     }
 }
+
+/* REGISTRATION PAGE */
+
+.registration-page {
+    padding: 70px 20px 100px;
+    background:
+        radial-gradient(ellipse at top right, #193451, transparent 45%),
+        var(--navy);
+}
+
+.registration-heading {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.registration-heading h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.registration-heading h1 span {
+    color: var(--gold);
+}
+
+.registration-heading > p:last-child {
+    color: var(--muted);
+}
+
+.registration-form {
+    max-width: 620px;
+    margin: auto;
+    padding: 40px;
+    background: #10233d;
+    border: 1px solid rgba(216,180,106,0.25);
+    border-radius: 16px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+}
+
+.registration-form h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.registration-form .journey-heading {
+    margin-top: 35px;
+}
+
+.registration-form label {
+    display: block;
+    color: var(--gold-light);
+    font-size: 13px;
+    font-weight: 600;
+    margin: 20px 0 8px;
+}
+
+.registration-form input:not([type="checkbox"]),
+.registration-form select {
+    width: 100%;
+    padding: 15px;
+    background: #09182b;
+    border: 1px solid #344761;
+    border-radius: 6px;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.registration-form input:focus,
+.registration-form select:focus {
+    border-color: var(--gold);
+}
+
+.registration-form input::placeholder {
+    color: #8290a4;
+}
+
+.registration-form select option {
+    background: #10233d;
+}
+
+.registration-form .consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--muted);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.registration-form .consent input {
+    margin-top: 5px;
+    accent-color: var(--gold);
+}
+
+.registration-form button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.form-message {
+    text-align: center;
+    margin-top: 15px;
+    color: var(--gold-light);
+}
+
+.form-disclaimer {
+    text-align: center;
+    font-size: 11px;
+    color: #8997aa;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .registration-page {
+        padding: 50px 15px 70px;
+    }
+
+    .registration-form {
+        padding: 25px 20px;
+    }
+
+    .registration-heading h1 {
+        font-size: 37px;
+    }
+}
