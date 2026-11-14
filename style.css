@@ -790,3 +790,16 @@ nav a:hover {
     letter-spacing: -1px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
+/* FlyShare premium button and link focus styles */
+
+button:focus,
+a:focus {
+    outline: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid #d4af37;
+    outline-offset: 4px;
+    border-radius: 6px;
+}
